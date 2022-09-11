@@ -1,6 +1,8 @@
 package serverv2
 
-import "net/http"
+import (
+	"net/http"
+)
 
 //第一种Server定义
 
@@ -12,7 +14,17 @@ type Server interface {
 type HTTPServer struct {
 }
 
-type HTTSServer struct {
+type HTTPSServer struct {
+	Server
+	//HTTPServer
+	CertiFIle string
+	KeyFile   string
+}
+
+// implement Server interface
+
+func (H *HTTPSServer) Start(addr string) error {
+	return http.ListenAndServeTLS(addr, H.CertiFIle, H.KeyFile, H)
 }
 
 func (H *HTTPServer) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
