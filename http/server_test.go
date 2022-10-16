@@ -1,17 +1,20 @@
-package main
+package http
 
 import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"testing"
 )
+
+// 这个代码是Go 并发编程实战书上的内容
 
 type Data struct {
 	Msg string
 }
 
 func handleIndex(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("http/index.html")
+	t, _ := template.ParseFiles("index.html")
 	data := Data{"hello http"}
 	t.Execute(w, data)
 }
@@ -36,7 +39,7 @@ func handleText(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func main() {
+func TestHttp(t *testing.T) {
 	http.HandleFunc("/", handleText)
 	http.HandleFunc("/index", handleIndex)
 	// 一定要写端口号，不然程序一下子就运行完了
@@ -44,5 +47,4 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-
 }

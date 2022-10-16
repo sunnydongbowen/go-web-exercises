@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+// Go并发编程实战汪明，书上的内容
+
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "hello Go https")
 }
