@@ -1,10 +1,11 @@
-package main
+package qimi
 
 import (
 	"github.com/gin-gonic/gin"
+	"testing"
 )
 
-func main() {
+func TestFirtGin(t *testing.T) {
 	//创建一个默认的路由引擎
 	r := gin.Default()
 	// GET: 请求方式，/hello请求路径

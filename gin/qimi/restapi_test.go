@@ -1,8 +1,11 @@
-package main
+package qimi
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"testing"
+)
 
-func main() {
+func TestRestFul(t *testing.T) {
 	r := gin.Default()
 	r.GET("/book", func(c *gin.Context) {
 		c.JSON(200, gin.H{
