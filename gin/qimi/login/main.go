@@ -49,13 +49,13 @@ type User struct {
 func LoginHandler(c *gin.Context) {
 	// 从请求中获取用户的请求数据
 	var reqData Login
-	// 有错误就返回错误码
+	// 有错误就返回错误码，这个其实是对传入数据的格式做了初步校验
 	if err := c.ShouldBind(&reqData); err != nil {
 		// 从请求中解析数据出错
 		c.JSON(http.StatusOK, gin.H{
 			// 内部业务状态码
 			"code": 1,
-			"msg":  "请求参数错误",
+			"msg":  "请求参数格式错误",
 		})
 	}
 	//fmt.Printf("reqData:%#v\n", reqData)
@@ -107,5 +107,4 @@ func QueryUser(username string, password string) (*User, error) {
 		return nil, err
 	}
 	return &u, nil
-
 }
