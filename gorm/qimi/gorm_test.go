@@ -42,5 +42,6 @@ func TestGorm(t *testing.T) {
 	// update
 	//db.Model(&p2).Update("Price", 200)
 	//db.Model(&p2).Updates(Product{Price: 300, Code: "F33"})
+	//还有map
 
 }
