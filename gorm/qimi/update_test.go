@@ -25,7 +25,7 @@ func initDB() (err error) {
 }
 
 func update1() {
-	// 没反应
+	//
 	db.Session(&gorm.Session{AllowGlobalUpdate: true}).Debug().Model(&Book{}).Updates(Book{Title: "Go语言学习", Amount: 30, Status: false})
 }
 
