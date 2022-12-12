@@ -1,0 +1,8 @@
+{"level":"info","ts":1667834005.072251,"msg":"日志信息","uid":189811282,"isLogin":true,"name":"bowen","data":"bowen"}
+{"level":"info","ts":1667834157.3974965,"msg":"日志信息","uid":189811282,"isLogin":true,"name":"bowen","data":"bowen"}
+{"level":"info","ts":1667834336.3815234,"msg":"日志信息","uid":189811282,"isLogin":true,"name":"bowen","data":"bowen"}
+{"level":"error","ts":1667834336.3820567,"msg":"这是一条错误日志"}
+{"level":"info","ts":1667838018.1691198,"msg":"日志信息","uid":189811282,"isLogin":true,"name":"bowen","data":"bowen"}
+{"level":"error","ts":1667838018.1696413,"msg":"这是一条错误日志"}
+{"level":"error","ts":1667876940.4864385,"msg":"这是一条错误日志"}
+{"level":"error","time":"2022-11-08T11:36:31.466+0800","msg":"这是一条错误日志"}

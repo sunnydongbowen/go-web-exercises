@@ -1,0 +1,4 @@
+{"level":"info","time":"2022-11-09T12:41:22.174+0800","msg":"日志信息","uid":189811282,"isLogin":true,"name":"bowen","data":"bowen"}
+{"level":"error","time":"2022-11-09T12:41:22.184+0800","msg":"这是一条错误日志"}
+{"level":"info","time":"2022-11-12T11:21:00.980+0800","msg":"日志信息","uid":189811282,"isLogin":true,"name":"bowen","data":"bowen"}
+{"level":"error","time":"2022-11-12T11:21:00.990+0800","msg":"这是一条错误日志"}

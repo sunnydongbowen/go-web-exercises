@@ -1,0 +1,6 @@
+version: "v1.10"
+port: 8990
+id: 1
+max: 2000
+app:
+  node: 19
