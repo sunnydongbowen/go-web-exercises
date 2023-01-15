@@ -24,15 +24,17 @@ func main() {
 	})
 
 	r.GET("/bobo", func(c *gin.Context) {
-		time.Sleep(time.Duration(2))
+		time.Sleep(time.Second)
 		c.HTML(http.StatusOK, "test.html", nil)
 	})
 
 	r.GET("/tom", func(c *gin.Context) {
+		time.Sleep(time.Second)
 		c.HTML(http.StatusOK, "test.html", nil)
 	})
 
 	r.GET("/jay", func(c *gin.Context) {
+		time.Sleep(time.Second)
 		c.HTML(http.StatusOK, "test.html", nil)
 	})
 	//启动服务
