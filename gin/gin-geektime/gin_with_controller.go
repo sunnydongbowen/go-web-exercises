@@ -1,4 +1,4 @@
-package gin_geektime
+package main
 
 import (
 	"github.com/gin-gonic/gin"
